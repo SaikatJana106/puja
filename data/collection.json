@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Necklace",
+    "image": "../image/collection1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Earrings",
+    "image": "../image/collection2.avif"
+  },
+  {
+    "id": 3,
+    "name": "Bangles",
+    "image": "../image/collection1.webp"
+  },
+    {
+    "id": 1,
+    "name": "Necklace",
+    "image": "../image/collection1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Earrings",
+    "image": "../image/collection2.avif"
+  },
+  {
+    "id": 3,
+    "name": "Bangles",
+    "image": "../image/collection1.webp"
+  },
+    {
+    "id": 1,
+    "name": "Necklace",
+    "image": "../image/collection1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Earrings",
+    "image": "../image/collection2.avif"
+  },
+  {
+    "id": 3,
+    "name": "Bangles",
+    "image": "../image/collection1.webp"
+  },
+    {
+    "id": 1,
+    "name": "Necklace",
+    "image": "../image/collection1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Earrings",
+    "image": "../image/collection2.avif"
+  },
+  {
+    "id": 3,
+    "name": "Bangles",
+    "image": "../image/collection1.webp"
+  },
+  {
+    "id": 4,
+    "name": "Pendants",
+    "image": "../image/collection2.avif"
+  }
+]

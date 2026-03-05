@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jewellery Khazana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section shine-wrapper">
+        <picture>
+            <source media="(max-width: 767.98px)" srcset="/image/hero-banner-mobile.webp">
+            <img src="/image/hero-banner.webp" class="banner" alt="banner">
+        </picture>
+    </section>
+    <section class="puja-booking-section py-5">
+        <div class="container">
+
+            <div class="puja-card">
+                <h5 class="puja-title">Book Your Puja Now</h5>
+                <p class="puja-subtitle">And Change Your Life</p>
+                <!-- Tabs -->
+                <div class="puja-tabs">
+                    <span class="active"><i class="bi bi-flower1"></i> Puja</span>
+                    <span><i class="bi bi-book"></i> Paath</span>
+                    <span><i class="bi bi-flower3"></i> Jaap</span>
+                    <span><i class="bi bi-lightning-charge"></i> Daily Puja</span>
+                    <span><i class="bi bi-heart"></i> Vivah</span>
+                </div>
+
+                <!-- Form -->
+                <div class="puja-form">
+
+                    <div class="puja-input">
+                        <i class="bi bi-geo-alt"></i>
+                        <input type="text" placeholder="Location">
+                    </div>
+
+                    <div class="puja-input">
+                        <i class="bi bi-person"></i>
+                        <input type="text" placeholder="Language">
+                    </div>
+
+                    <div class="puja-input">
+                        <i class="bi bi-flower1"></i>
+                        <input type="text" placeholder="Select Puja">
+                    </div>
+
+                    <div class="puja-input" style="min-width: fit-content;">
+                        <!-- <i class="bi bi-calendar"></i> -->
+                        <input type="datetime-local" placeholder="Date and Time">
+                    </div>
+
+                    <button class="puja-btn">
+                        Book Puja
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Collection Categories -->
+    <!-- <div style="width: 98%; max-width: 2000px; margin: auto;">
+        <div class="section-title">
+            <h5>OUR COLLECTION</h5>
+            <p style="font-size: 14px; color: gray;">Where Every Piece Tells a Story</p>
+        </div>
+
+        <div class="d-flex justify-content-start align-items-center gap-3 overflow-auto hide-scrollbar"
+            id="categoryContainer">
+        </div>
+    </div> -->
+
+    <!-- New Arrivals -->
+    <!-- <div style="width: 98%; max-width: 2000px; margin: auto;">
+        <div class="section-title">
+            <h5>NEW ARRIVALS</h5>
+            <p style="font-size: 14px; color: gray;">Shop our new arrivals</p>
+        </div>
+
+        <div class="d-flex justify-content-start align-items-center gap-3 overflow-auto hide-scrollbar"
+            id="productContainer">
+        </div>
+    </div> -->
+
+    <!-- Under Offer  -->
+    <section class="mb-4 overflow-hidden" style="width: 98%; max-width: 2000px; margin: auto;">
+        <div class="section-title">
+            <h5>SHOP BY BUDGET</h5>
+            <p style="font-size: 14px; color: gray;">Describe your products, collection, content etc...</p>
+        </div>
+        <div class="budget-section">
+            <picture class="budget-box">
+                <source media="(max-width: 767.98px)" srcset="/image/under12.avif">
+                <img style="flex: 1 1 0; min-width: 0; object-fit: cover; aspect-ratio: 1/1; height: auto; max-width: 250px;"
+                    src="/image/under1.webp" class="budget" alt="under">
+            </picture>
+            <picture class="budget-box">
+                <source media="(max-width: 767.98px)" srcset="/image/under22.avif">
+                <img style="flex: 1 1 0; min-width: 0; object-fit: cover; aspect-ratio: 1/1; height: auto; max-width: 250px;"
+                    src="/image/under2.webp" class="budget" alt="under">
+            </picture>
+            <picture class="budget-box">
+                <source media="(max-width: 767.98px)" srcset="/image/under32.avif">
+                <img style="flex: 1 1 0; min-width: 0; object-fit: cover; aspect-ratio: 1/1; height: auto; max-width: 250px;"
+                    src="/image/under3.webp" class="budget" alt="under">
+            </picture>
+            <picture class="budget-box">
+                <source media="(max-width: 767.98px)" srcset="/image/under42.avif">
+                <img style="flex: 1 1 0; min-width: 0; object-fit: cover; aspect-ratio: 1/1; height: auto; max-width: 250px;"
+                    src="/image/under4.webp" class="budget" alt="under">
+            </picture>
+            <picture class="budget-box">
+                <source media="(max-width: 767.98px)" srcset="/image/under52.avif">
+                <img style="flex: 1 1 0; min-width: 0; object-fit: cover; aspect-ratio: 1/1; height: auto; max-width: 250px;"
+                    src="/image/under5.webp" class="budget" alt="under">
+            </picture>
+            <picture class="budget-box">
+                <source media="(max-width: 767.98px)" srcset="/image/under62.avif">
+                <img style="flex: 1 1 0; min-width: 0; object-fit: cover; aspect-ratio: 1/1; height: auto; max-width: 250px;"
+                    src="/image/under6.webp" class="budget" alt="under">
+            </picture>
+        </div>
+    </section>
+
+    <section class="hero-section shine-wrapper">
+        <picture>
+            <source media="(max-width: 767.98px)" srcset="/image/banner2.webp">
+            <img src="/image/banner21.webp" class="banner" alt="banner">
+        </picture>
+    </section>
+
+    <section style="width: 98%; max-width: 2000px; margin: auto;"
+        class="d-flex overflow-auto my-4 gap-3 hide-scrollbar">
+        <video style="aspect-ratio: 9/16; height: 500px; width: 300px;" src="/image/1.mp4" autoplay muted></video>
+        <video style="aspect-ratio: 9/16; height: 500px; width: 300px;" src="/image/2.mp4" autoplay muted></video>
+        <video style="aspect-ratio: 9/16; height: 500px; width: 300px;" src="/image/1.mp4" autoplay muted></video>
+        <video style="aspect-ratio: 9/16; height: 500px; width: 300px;" src="/image/2.mp4" autoplay muted></video>
+        <video style="aspect-ratio: 9/16; height: 500px; width: 300px;" src="/image/1.mp4" autoplay muted></video>
+        <video style="aspect-ratio: 9/16; height: 500px; width: 300px;" src="/image/1.mp4" autoplay muted></video>
+    </section>
+
+    <section class="hero-section shine-wrapper">
+        <picture>
+            <source media="(max-width: 767.98px)" srcset="/image/banner31.webp">
+            <img src="/image/banner3.webp" class="banner" alt="banner">
+        </picture>
+    </section>
+
+
+    <section style="width: 98%; max-width: 2000px; margin: auto;">
+        <div class="section-title">
+            <h5>Our Bestsellers</h5>
+            <p style="font-size: 14px; color: gray;">Shop our All Time Favorites</p>
+        </div>
+
+        <div class="row g-2" id="bestsellContainer">
+            <!-- Products will load here dynamically -->
+        </div>
+    </section>
+
+
+    <!-- Red Feature Bar -->
+    <section class="feature-bar overflow-hidden">
+        <div style="width: 98%; max-width: 2000px; margin: auto;">
+            <div class="row justify-content-center align-items-center  text-center align-items-center gap-3">
+
+                <!-- Easy Returns -->
+                <div class="col-md-3 feature-item">
+                    <div class="d-flex align-items-center justify-content-start gap-3">
+                        <img style="width: 38px; height: 38px;" src="/image/return.avif" alt="">
+                        <div class="text-start">
+                            <h6>EASY RETURNS</h6>
+                            <p>7-day hassle-free return policy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Free Shipping -->
+                <div class="col-md-3 feature-item border-line">
+                    <div class="d-flex align-items-center justify-content-start gap-3">
+                        <img style="width: 38px; height: 38px;" src="/image/shipping.avif" alt="">
+                        <div class="text-start">
+                            <h6>FREE SHIPPING</h6>
+                            <p>On all prepaid orders above ₹1499</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secure Payments -->
+                <div class="col-md-3 feature-item">
+                    <div class="d-flex align-items-center justify-content-start gap-3">
+                        <img style="width: 38px; height: 38px;" src="/image/pay.avif" alt="">
+                        <div class="text-start">
+                            <h6>SECURE PAYMENTS</h6>
+                            <p>All major cards & UPI accepted</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <section class="review-section py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-2">Our customers love us</h2>
+            <p class="mb-5 fw-semibold">5.0 star Based on All Customer Reviews</p>
+        </div>
+
+        <div class="review-wrapper hide-scrollbar">
+            <div class="review-track">
+
+                <!-- Review Card -->
+                <div class="review-card">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg">
+                    <div>
+                        <h6>Suhana <span class="stars">★★★★★</span></h6>
+                        <p>Very nice product 😊</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <img
+                        src="https://wallpapers.com/images/hd/smiling-random-person-graphic-png-trv-4350ryshed47fke7.jpg">
+                    <div>
+                        <h6>Somnath S. <span class="stars">★★★★★</span></h6>
+                        <p>Good looking, so beautiful</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg">
+                    <div>
+                        <h6>Moumita B. <span class="stars">★★★★★</span></h6>
+                        <p>Build quality and finishing both are top class.</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <img
+                        src="https://wallpapers.com/images/hd/smiling-random-person-graphic-png-trv-4350ryshed47fke7.jpg">
+                    <div>
+                        <h6>Ila R. <span class="stars">★★★★★</span></h6>
+                        <p>Khub sundor necklace ta...</p>
+                    </div>
+                </div>
+
+                <!-- Duplicate for smooth loop -->
+                <div class="review-card">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg">
+                    <div>
+                        <h6>Suhana <span class="stars">★★★★★</span></h6>
+                        <p>Very nice product 😊</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <img
+                        src="https://wallpapers.com/images/hd/smiling-random-person-graphic-png-trv-4350ryshed47fke7.jpg">
+                    <div>
+                        <h6>Somnath S. <span class="stars">★★★★★</span></h6>
+                        <p>Good looking, so beautiful</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

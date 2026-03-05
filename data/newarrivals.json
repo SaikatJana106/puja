@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Gold Necklace",
+    "price": 4250,
+    "image": "../image/product1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Stylish Bridal Set",
+    "price": 3850,
+    "image": "../image/product2.webp"
+  },
+  {
+    "id": 3,
+    "name": "Gold Plated Earrings",
+    "price": 1850,
+    "image": "../image/product1.webp"
+  },
+   {
+    "id": 1,
+    "name": "Premium Gold Necklace",
+    "price": 4250,
+    "image": "../image/product1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Stylish Bridal Set",
+    "price": 3850,
+    "image": "../image/product2.webp"
+  },
+  {
+    "id": 3,
+    "name": "Gold Plated Earrings",
+    "price": 1850,
+    "image": "../image/product1.webp"
+  },
+   {
+    "id": 1,
+    "name": "Premium Gold Necklace",
+    "price": 4250,
+    "image": "../image/product1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Stylish Bridal Set",
+    "price": 3850,
+    "image": "../image/product2.webp"
+  },
+  {
+    "id": 3,
+    "name": "Gold Plated Earrings",
+    "price": 1850,
+    "image": "../image/product1.webp"
+  },
+   {
+    "id": 1,
+    "name": "Premium Gold Necklace",
+    "price": 4250,
+    "image": "../image/product1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Stylish Bridal Set",
+    "price": 3850,
+    "image": "../image/product2.webp"
+  },
+  {
+    "id": 3,
+    "name": "Gold Plated Earrings",
+    "price": 1850,
+    "image": "../image/product1.webp"
+  },
+  {
+    "id": 4,
+    "name": "Traditional Choker",
+    "price": 2950,
+    "image": "../image/product2.webp"
+  }
+]
