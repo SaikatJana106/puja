@@ -70,11 +70,11 @@ async function loadBestSellers() {
         container.innerHTML = "";
         products.forEach((product) => {
             container.innerHTML += `
-                <div class="col-xl-3 col-lg-4 col-6">
+                <div class="custom-col-5">
                     <div class="product-card">
                         <img src="${normalizeImagePath(product.image)}" alt="${product.name}">
                         <div class="product-info">
-                            <h6 class="line-clamp-1">${product.name}</h6>
+                            <h6 class="line-clamp-1 product-name">${product.name}</h6>
                             <p class="price">${formatPrice(product.price)}</p>
                             <button class="btn-cart" onclick="addToCart(${product.id})">
                                 ADD TO CART
