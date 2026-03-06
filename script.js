@@ -42,7 +42,22 @@ async function loadNewArrivals() {
             container.innerHTML += `
                 <div style="min-width:200px" class="col-md-3 col-sm-6">
                     <div class="product-card">
-                        <img src="${normalizeImagePath(product.image)}" alt="${product.name}">
+                        <div class="product-image-wrap">
+                            <img src="${normalizeImagePath(product.image)}" alt="${product.name}">
+                            <div class="product-actions" aria-label="Product quick actions">
+                                <div class="action-buttons">
+                                    <button class="action-btn" type="button" aria-label="Add to wishlist" data-tooltip="Add to Wishlist">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+                                    <button class="action-btn" type="button" aria-label="Add to cart" data-tooltip="Add to Cart" onclick="addToCart(${product.id})">
+                                        <i class="bi bi-cart"></i>
+                                    </button>
+                                    <button class="action-btn" type="button" aria-label="Quick view" data-tooltip="Quick View">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="product-info">
                             <h6 class="line-clamp-1">${product.name}</h6>
                             <p class="price">${formatPrice(product.price)}</p>
@@ -72,7 +87,22 @@ async function loadBestSellers() {
             container.innerHTML += `
                 <div class="custom-col-5">
                     <div class="product-card">
-                        <img src="${normalizeImagePath(product.image)}" alt="${product.name}">
+                        <div class="product-image-wrap">
+                            <img src="${normalizeImagePath(product.image)}" alt="${product.name}">
+                            <div class="product-actions" aria-label="Product quick actions">
+                                <div class="action-buttons">
+                                    <button class="action-btn" type="button" aria-label="Add to wishlist" data-tooltip="Add to Wishlist">
+                                        <i class="bi bi-heart" style="font-size:20px;"></i>
+                                    </button>
+                                    <button class="action-btn" type="button" aria-label="Add to cart" data-tooltip="Add to Cart" onclick="addToCart(${product.id})">
+                                        <i class="bi bi-cart" style="font-size:20px;"></i>
+                                    </button>
+                                    <button class="action-btn" type="button" aria-label="Quick view" data-tooltip="Quick View">
+                                        <i class="bi bi-zoom-in" style="font-size:20px;"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="product-info">
                             <h6 class="line-clamp-1 product-name">${product.name}</h6>
                             <p class="price">${formatPrice(product.price)}</p>
