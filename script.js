@@ -180,3 +180,91 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const row = document.getElementById("instaRow");
+    const leftBtn = document.querySelector(".insta-arrow.left");
+    const rightBtn = document.querySelector(".insta-arrow.right");
+
+    if (!row || !leftBtn || !rightBtn) return;
+
+    const updateArrowVisibility = () => {
+        const maxScrollLeft = row.scrollWidth - row.clientWidth;
+        const hasOverflow = maxScrollLeft > 1;
+
+        if (!hasOverflow) {
+            leftBtn.style.display = "none";
+            rightBtn.style.display = "none";
+            return;
+        }
+
+        // In carousel mode both arrows stay visible whenever content overflows.
+        leftBtn.style.display = "flex";
+        rightBtn.style.display = "flex";
+    };
+
+    const getStep = () => {
+        const cards = row.querySelectorAll(".insta-card");
+        if (!cards.length) return 320;
+        if (cards.length > 1) {
+            const distance = cards[1].offsetLeft - cards[0].offsetLeft;
+            if (distance > 0) return distance;
+        }
+        return cards[0].getBoundingClientRect().width;
+    };
+
+    let isAnimating = false;
+
+    rightBtn.addEventListener("click", () => {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        const step = getStep();
+        row.scrollBy({ left: step, behavior: "smooth" });
+
+        setTimeout(() => {
+            const firstCard = row.firstElementChild;
+            if (firstCard) row.appendChild(firstCard);
+            row.scrollLeft = Math.max(0, row.scrollLeft - step);
+            isAnimating = false;
+        }, 360);
+    });
+
+    leftBtn.addEventListener("click", () => {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        const step = getStep();
+        const lastCard = row.lastElementChild;
+        if (lastCard) {
+            row.insertBefore(lastCard, row.firstElementChild);
+            row.scrollLeft += step;
+        }
+
+        requestAnimationFrame(() => {
+            row.scrollBy({ left: -step, behavior: "smooth" });
+        });
+
+        setTimeout(() => {
+            isAnimating = false;
+        }, 360);
+    });
+
+    row.addEventListener("scroll", updateArrowVisibility, { passive: true });
+    window.addEventListener("resize", updateArrowVisibility);
+
+    updateArrowVisibility();
+});
+
+document.addEventListener("click", function (event) {
+    const toggle = event.target.closest(".footer-toggle");
+    if (!toggle || window.innerWidth > 766) return;
+
+    const section = toggle.closest(".footer-collapsible");
+    if (!section) return;
+
+    section.classList.toggle("open");
+    const isOpen = section.classList.contains("open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+});

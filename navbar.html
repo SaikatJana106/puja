@@ -1,7 +1,7 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg nav-container">
+<nav class="navbar navbar-expand-lg nav-container desktop-nav-hide">
     <div
-        style="width: 95%; max-width: 2000px; margin: auto; display:flex; justify-content: space-between; align-items: center;">
+        style="width: 95%; max-width: 1600px; margin: auto; display:flex; justify-content: space-between; align-items: center;">
         <img src="/image/nav-logo.png" class="footer-logo" alt="Logo">
 
         <div class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
@@ -31,36 +31,69 @@
                 </div>
             </div>
         </div>
+    </div>
+</nav>
 
-        <!-- Custom Mobile Dropdown -->
+
+<!-- mobile version  -->
+<nav class="navbar navbar-expand-lg nav-container mobile-nav-hide overflow-hidden">
+    <div
+        style="width: 95%; max-width: 1600px; margin: auto; display:flex; justify-content: space-between; align-items: center;">
+        <div class="d-flex justify-content-center align-items-center gap-3">
+            <div class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <i class="bi bi-list" style="font-size:28px;"></i>
+            </div>
+            <i class="bi bi-search" style="font-size: 20px;"></i>
+        </div>
+        <img style="flex: 1; max-width: 150px;" src="/image/nav-logo.png" class="footer-logo" alt="Logo">
+        <div class="d-flex justify-content-center align-items-center gap-3">
+            <i class="bi bi-suit-heart" style="font-size: 20px;"></i>
+            <div class="position-relative">
+                <i class="bi bi-bag" style="font-size: 20px;"></i>
+                <div class="d-flex justify-content-center align-items-center"
+                    style="background-color: #7e0f0d; border-radius: 100%; padding: 2px; position: absolute; top: -4px; right: -10px; height: 14px; width: 14px;">
+                    <span
+                        style="color: white; font-size: 12px; font-weight: 600; font-family: 'Poppins', sans-serif;">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Custom Mobile Dropdown -->
 </nav>
 
 <!-- Mobile Offcanvas -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
 
-    <div class="offcanvas-header">
-        <img src="/image/logo.png" style="height:50px;">
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-    </div>
+    <!-- <div class="offcanvas-header"> -->
+        <!-- <img src="/image/logo.png" style="height:50px;"> -->
+        <!-- <div class="offcanvas-header "> -->
+            <div class="custom-close">
+                <button type="button" class="btn-close custom-close-btn" data-bs-dismiss="offcanvas"></button>
+            </div>
+        <!-- </div> -->
+    <!-- </div> -->
 
     <div class="offcanvas-body">
 
-        <div class="mobile-search mb-3"
+        <!-- <div class="mobile-search mb-3"
             style="display:flex;align-items:center;border:1px solid #ddd;border-radius:30px;padding:6px 12px;">
             <i class="bi bi-search"></i>
             <input type="text" placeholder="Search here" style="border:none;outline:none;flex:1;font-size:14px;">
-        </div>
+        </div> -->
 
         <div class="mobile-links d-flex flex-column gap-3">
-            <a href="#">Home</a>
-            <a href="#">Our Collections</a>
-            <a href="#">All Products</a>
-            <a href="#">New Arrivals</a>
-            <a href="#">Size Chart</a>
-            <a href="#">Contact</a>
+            <a class="mobile-nav-text" href="#">Home</a>
+            <a class="mobile-nav-text" href="#">Our Collections</a>
+            <a class="mobile-nav-text" href="#">All Products</a>
+            <a class="mobile-nav-text" href="#">New Arrivals</a>
+            <a class="mobile-nav-text" href="#">Size Chart</a>
+            <a class="mobile-nav-text" href="#">Contact</a>
+            <a class="mobile-nav-text" href="#">Login</a>
+            <a class="mobile-nav-text" href="#">Register</a>
+            <a class="mobile-nav-text" href="#">Wishlist</a>
         </div>
 
-        <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+        <!-- <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
             <i class="bi bi-person" style="font-size: 20px;"></i>
             <i class="bi bi-suit-heart" style="font-size: 20px;"></i>
             <div class="position-relative">
@@ -71,7 +104,7 @@
                         style="color: white; font-size: 12px; font-weight: 600; font-family: 'Poppins', sans-serif;">0</span>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </div>
