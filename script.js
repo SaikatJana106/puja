@@ -88,7 +88,7 @@ async function loadBestSellers() {
                 <div class="custom-col-5">
                     <div class="product-card">
                         <div class="product-image-wrap">
-                            <img src="${normalizeImagePath(product.image)}" alt="${product.name}">
+                            <img style="cursor: pointer" src="${normalizeImagePath(product.image)}" alt="${product.name}">
                             <div class="product-actions" aria-label="Product quick actions">
                                 <div class="action-buttons">
                                     <button class="action-btn" type="button" aria-label="Add to wishlist" data-tooltip="Add to Wishlist">
