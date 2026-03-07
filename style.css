@@ -659,7 +659,7 @@ p {
   display: flex;
   gap: 25px;
   width: max-content;
-  animation: scrollReviews 70s linear infinite;
+  animation: scrollReviews 60s linear infinite;
   animation-play-state: running;
 }
 
