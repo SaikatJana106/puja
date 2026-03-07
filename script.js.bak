@@ -134,17 +134,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // navbar footer call 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("topbar.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("topbar").innerHTML = data;
-        });
+
     fetch("navbar.html")
         .then(res => res.text())
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
         });
-
 
     fetch("footer.html")
         .then(res => res.text())

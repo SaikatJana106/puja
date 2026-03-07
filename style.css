@@ -67,7 +67,7 @@ p {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.nav-link {
+.nav-link-text {
   color: #444;
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
@@ -82,18 +82,19 @@ p {
   text-decoration: none;
 }
 
-.nav-link:hover {
+.nav-link-text:hover {
   color: #7e0f0d;
 }
 
 
 .nav-container {
-  width: 98%;
-  max-width: 2000px;
+  width: 100%;
+  padding: 55px 0px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 40px;
 }
 
 
@@ -144,7 +145,8 @@ p {
 /* OFFCANVAS */
 
 #mobileMenu {
-  width: 300px;
+  width: 90dvw;
+  max-width: 400px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -639,7 +641,7 @@ p {
   display: flex;
   gap: 25px;
   width: max-content;
-  animation: scrollReviews 25s linear infinite;
+  animation: scrollReviews 90s linear infinite;
   animation-play-state: running;
 }
 
