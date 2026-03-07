@@ -85,7 +85,7 @@ async function loadBestSellers() {
         container.innerHTML = "";
         products.forEach((product) => {
             container.innerHTML += `
-                <div class="custom-col-5 m-0">
+                <div class="custom-col-5">
                     <div class="product-card">
                         <div class="product-image-wrap">
                             <img src="${normalizeImagePath(product.image)}" alt="${product.name}">

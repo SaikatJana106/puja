@@ -216,6 +216,24 @@ p {
 
 
 /* Hero */
+.hero-third-banner {
+  display: block;
+}
+
+.hero-third-banner-copy {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hero-third-banner {
+    display: none;
+  }
+
+  .hero-third-banner-copy {
+    display: block;
+  }
+}
+
 .hero-section {
   background: linear-gradient(to right, #ffe6f0, #fff);
   padding: 0px 0;
