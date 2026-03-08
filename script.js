@@ -268,3 +268,30 @@ document.addEventListener("click", function (event) {
     const isOpen = section.classList.contains("open");
     toggle.setAttribute("aria-expanded", String(isOpen));
 });
+
+
+// go to top button call 
+document.addEventListener("DOMContentLoaded", function () {
+  const topButtonHost = document.getElementById("topbutton");
+  if (!topButtonHost) return;
+
+  fetch("topbutton.html")
+    .then((res) => res.text())
+    .then((data) => {
+      topButtonHost.innerHTML = data;
+    })
+    .catch((err) => console.error("Error loading top button:", err));
+});
+
+// bottom nav call 
+document.addEventListener("DOMContentLoaded", function () {
+  const bottomnavHost = document.getElementById("bottomnav");
+  if (!bottomnavHost) return;
+
+  fetch("bottomnav.html")
+    .then((res) => res.text())
+    .then((data) => {
+      bottomnavHost.innerHTML = data;
+    })
+    .catch((err) => console.error("Error loading top button:", err));
+});

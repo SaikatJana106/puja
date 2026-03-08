@@ -20,8 +20,8 @@
             <div class="d-flex justify-content-center align-items-center gap-3" style="margin-bottom: 5px;">
                 <i class="bi bi-search" style="font-size: 20px;"></i>
                 <i class="bi bi-person" style="font-size: 20px;"></i>
-                <i class="bi bi-suit-heart" style="font-size: 20px;"></i>
-                <div class="position-relative">
+                <i class="bi bi-heart" style="font-size: 20px;"></i>
+                <div class="position-relative" style="margin-bottom: 5px;">
                     <i class="bi bi-bag" style="font-size: 20px;"></i>
                     <div class="d-flex justify-content-center align-items-center"
                         style="background-color: #7e0f0d; border-radius: 100%; padding: 2px; position: absolute; top: -2px; right: -16px; height: 16px; width: 16px;">
@@ -36,25 +36,23 @@
 
 
 <!-- mobile version  -->
-<nav class="navbar navbar-expand-lg nav-container mobile-nav-hide overflow-hidden">
+<nav class="navbar navbar-expand-lg nav-container mobile-nav-hide overflow-hidden p-0" style="min-height: 50px">
     <div
-        style="width: 95%; max-width: 1600px; margin: auto; display:flex; justify-content: space-between; align-items: center;">
-        <div class="d-flex justify-content-center align-items-center gap-3">
-            <div class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-                <i class="bi bi-list" style="font-size:28px;"></i>
+        style="padding: 0px 10px; width: 100%; max-width: 1600px; margin: auto; display:flex; align-items: center; justify-content: space-between;">
+        <div class="d-flex justify-content-start align-items-center" style="flex: 1; max-width: 75px;">
+            <div class="menu-toggle d-flex justify-content-center align-items-center padding: 0px 9px"
+                data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <i class="bi bi-list" style="font-size:23px;"></i>
             </div>
-            <i class="bi bi-search" style="font-size: 20px;"></i>
+            <i class="bi bi-search" style="font-size: 16px; padding: 0px 9px"></i>
         </div>
-        <img style="flex: 1; max-width: 150px;" src="/image/nav-logo.png" class="footer-logo" alt="Logo">
-        <div class="d-flex justify-content-center align-items-center gap-3">
-            <i class="bi bi-suit-heart" style="font-size: 20px;"></i>
-            <div class="position-relative">
-                <i class="bi bi-bag" style="font-size: 20px;"></i>
-                <div class="d-flex justify-content-center align-items-center"
-                    style="background-color: #7e0f0d; border-radius: 100%; padding: 2px; position: absolute; top: -4px; right: -10px; height: 14px; width: 14px;">
-                    <span
-                        style="color: white; font-size: 12px; font-weight: 600; font-family: 'Poppins', sans-serif;">0</span>
-                </div>
+        <img style="flex: 1; max-width: 100px; height: 35.41px; min-width:40px" src="/image/nav-logo.png"
+            class="footer-logo" alt="Logo">
+        <div class="d-flex justify-content-end align-items-center" style="flex: 1; max-width: 75px;">
+            <i class="bi bi-person" style="font-size: 20px; padding: 0px 9px"></i>
+            <div class="position-relative" style="padding: 0px 9px;">
+                <i class="bi bi-bag" style="font-size: 18px;"></i>
+                    <span style="position: absolute; background: #7e0f0d; color: #fff; min-width: 16px; height: 16px; border-radius: 16px; line-height: 17px; font-size: 10px; right: -5px; top: -5px; display: flex; justify-content: center; align-items: center;">0</span>
             </div>
         </div>
     </div>
@@ -65,12 +63,12 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
 
     <!-- <div class="offcanvas-header"> -->
-        <!-- <img src="/image/logo.png" style="height:50px;"> -->
-        <!-- <div class="offcanvas-header "> -->
-            <div class="custom-close">
-                <button type="button" class="btn-close custom-close-btn" data-bs-dismiss="offcanvas"></button>
-            </div>
-        <!-- </div> -->
+    <!-- <img src="/image/logo.png" style="height:50px;"> -->
+    <!-- <div class="offcanvas-header "> -->
+    <div class="custom-close">
+        <button type="button" class="btn-close custom-close-btn" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <!-- </div> -->
     <!-- </div> -->
 
     <div class="offcanvas-body">
