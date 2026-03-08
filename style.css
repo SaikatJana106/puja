@@ -149,7 +149,7 @@ p {
 
 #navMenu ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex: 1;
   margin: 0px;
