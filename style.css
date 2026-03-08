@@ -633,6 +633,16 @@ p {
   padding: 50px 0px;
 }
 
+.footer-top-contain {
+  display: flex;
+  width: 100%;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  padding: 50px 0;
+}
+
 .footer-top {
   display: flex;
   width: 100%;
@@ -640,6 +650,7 @@ p {
   align-items: stretch;
   flex-wrap: wrap;
   margin-bottom: -30px;
+  margin-left: -30px;
   padding: 50px 0px;
 }
 
@@ -647,6 +658,12 @@ p {
   flex: 0 0 auto;
   margin-bottom: 30px;
   padding-left: 30px;
+  max-width: 100%;
+}
+
+.footer-top-item-nop {
+  flex: 0 0 auto;
+  margin-bottom: 30px;
   max-width: 100%;
 }
 
@@ -743,12 +760,13 @@ p {
 .footer-text {
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
 }
 
 .footer-title {
   font-weight: 700;
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
 }
@@ -921,9 +939,8 @@ p {
 
 .payment-icons img {
   height: 35px;
-  margin-right: 10px;
+  margin-right: 5px;
   background: #fff;
-  padding: 5px;
   border-radius: 5px;
 }
 
