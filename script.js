@@ -295,3 +295,45 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((err) => console.error("Error loading top button:", err));
 });
+
+function safeShowDialogModal(dialog) {
+  if (!dialog) return;
+  try {
+    if (typeof dialog.showModal === "function") dialog.showModal();
+    else dialog.setAttribute("open", "");
+  } catch {
+    dialog.setAttribute("open", "");
+  }
+}
+
+function safeCloseDialog(dialog) {
+  if (!dialog) return;
+  try {
+    if (typeof dialog.close === "function") dialog.close();
+    else dialog.removeAttribute("open");
+  } catch {
+    dialog.removeAttribute("open");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('dialog[data-auto-show="true"]').forEach((dialog) => {
+    safeShowDialogModal(dialog);
+  });
+});
+
+document.addEventListener("click", function (event) {
+  const closeTrigger = event.target.closest("[data-dialog-close]");
+  if (closeTrigger) {
+    safeCloseDialog(closeTrigger.closest("dialog"));
+    return;
+  }
+
+  const openTrigger = event.target.closest("[data-dialog-open]");
+  if (openTrigger) {
+    const targetId = openTrigger.getAttribute("data-dialog-open");
+    if (!targetId) return;
+    const dialog = document.getElementById(targetId);
+    safeShowDialogModal(dialog);
+  }
+});
