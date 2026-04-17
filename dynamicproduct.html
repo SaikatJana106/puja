@@ -13,6 +13,137 @@
 </head>
 
 <body>
+    <div>
+
+        <!-- Top Bar -->
+        <div class="top-bar py-2" style="background: #7e0f0d;">
+            <div style="width: 95%; max-width: 2000px; margin: auto;">
+                <div class="row  flex-nowrap align-items-center justify-content-center text-white">
+
+                    <!-- Left Side -->
+                    <div class="col-md-4 min-w-fit d-none d-xl-flex align-items-center gap-4 small-text"
+                        style="min-width: fit-content;">
+                        <span style="color: white;"><i class="bi bi-telephone-fill me-2"></i>+91 99999 99999</span>
+                        <span style="color: white;"><i class="bi bi-envelope-fill me-2"></i>amodr@gmail.com</span>
+                    </div>
+
+                    <!-- Center -->
+                    <div style="color: white; min-width:fit-content; font-size: 12px; font-family: 'Poppins', sans-serif;"
+                        class="col-md-4 min-w-fit text-center ">
+                        FREE SHIPPING on order above Rs.1499
+                    </div>
+
+                    <!-- Right Side -->
+                    <div
+                        class="col-md-4 min-w-fit d-none d-xl-flex justify-content-md-end justify-content-center gap-3">
+                        <a style="color: white;" href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a style="color: white;" href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a style="color: white;" href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                        <a style="color: white;" href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-sticky top-0" style="z-index: 1036;">
+        <nav class="navbar navbar-expand-lg nav-container desktop-nav-hide p-0">
+            <div
+                style="width: 100%;  margin: auto; display:flex; justify-content: space-between; align-items: center; padding-left: 55px; padding-right: 55px;">
+                <img src="/image/nav-logo.png" class="footer-logo" alt="Logo">
+
+                <div class="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <i class="bi bi-list" style="font-size:28px;"></i>
+                </div>
+
+                <div id="navMenu">
+                    <ul style="max-width: 1000px; margin: auto;">
+                        <li class="nav-item"><a class="nav-link-text" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link-text" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link-text" href="#">Our Collections</a></li>
+                        <li class="nav-item"><a class="nav-link-text" href="#">All Products</a></li>
+                        <li class="nav-item"><a class="nav-link-text" href="#">New Arrivals</a></li>
+                        <li class="nav-item"><a class="nav-link-text" href="#">Size Chart</a></li>
+                        <li class="nav-item"><a class="nav-link-text" href="#">Contact</a></li>
+                    </ul>
+                    <div class="d-flex justify-content-center align-items-center gap-3" style="margin-bottom: 5px;">
+                        <i class="bi bi-search" style="font-size: 20px;"></i>
+                        <i class="bi bi-person" style="font-size: 20px;"></i>
+                        <i class="bi bi-heart" style="font-size: 20px;"></i>
+                        <div class="position-relative" style="margin-bottom: 5px;">
+                            <i class="bi bi-bag" style="font-size: 20px;"></i>
+                            <div class="d-flex justify-content-center align-items-center"
+                                style="background-color: #7e0f0d; border-radius: 100%; padding: 2px; position: absolute; top: -2px; right: -16px; height: 16px; width: 16px;">
+                                <span
+                                    style="color: white; font-size: 12px; font-weight: 600; font-family: 'Poppins', sans-serif;">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- mobile version  -->
+        <nav class="navbar navbar-expand-lg nav-container mobile-nav-hide overflow-hidden p-0" style="min-height: 50px">
+            <div
+                style="padding: 0px 10px; width: 100%; max-width: 1600px; margin: auto; display:flex; align-items: center; justify-content: space-between;">
+                <div class="d-flex justify-content-start align-items-center" style="flex: 1; max-width: 75px;">
+                    <div class="menu-toggle d-flex justify-content-center align-items-center padding: 0px 9px"
+                        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                        <i class="bi bi-list" style="font-size:23px;"></i>
+                    </div>
+                    <i class="bi bi-search" style="font-size: 16px; padding: 0px 9px"></i>
+                </div>
+                <img style="flex: 1; max-width: 100px; height: 35.41px; min-width:40px" src="/image/nav-logo.png"
+                    class="footer-logo" alt="Logo">
+                <div class="d-flex justify-content-end align-items-center" style="flex: 1; max-width: 75px;">
+                    <i class="bi bi-person" style="font-size: 20px; padding: 0px 9px"></i>
+                    <div class="position-relative" style="padding: 0px 9px;">
+                        <i class="bi bi-bag" style="font-size: 18px;"></i>
+                        <span
+                            style="position: absolute; background: #7e0f0d; color: #fff; min-width: 16px; height: 16px; border-radius: 16px; line-height: 17px; font-size: 10px; right: -5px; top: -5px; display: flex; justify-content: center; align-items: center;">0</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Custom Mobile Dropdown -->
+        </nav>
+
+        <!-- Mobile Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+            <div class="custom-close">
+                <button type="button" class="btn-close custom-close-btn" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <div class="mobile-links d-flex flex-column gap-3">
+                    <a class="mobile-nav-text" href="#">Home</a>
+                    <a class="mobile-nav-text" href="#">Our Collections</a>
+                    <a class="mobile-nav-text" href="#">All Products</a>
+                    <a class="mobile-nav-text" href="#">New Arrivals</a>
+                    <a class="mobile-nav-text" href="#">Size Chart</a>
+                    <a class="mobile-nav-text" href="#">Contact</a>
+                    <a class="mobile-nav-text" href="#">Login</a>
+                    <a class="mobile-nav-text" href="#">Register</a>
+                    <a class="mobile-nav-text" href="#">Wishlist</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar" style="background: #f6d172;">
+        <div class="marquee d-flex gap-4">
+            <span style="color: black;">Book Trusted Pandits for All Puja & Rituals</span>
+            <span style="color: black;">Easy Online Booking for Satyanarayan Puja</span>
+            <span style="color: black;">Pandit Available for Griha Pravesh & Housewarming</span>
+            <span style="color: black;">Durga Puja | Lakshmi Puja | Kali Puja Booking Open</span>
+            <span style="color: black;">Experienced Vedic Pandits Available Near You</span>
+            <span style="color: black;">Book Pandit for Wedding & Engagement Rituals</span>
+            <span style="color: black;">Online Puja Services Available Across India</span>
+            <span style="color: black;">Special Muhurat Puja Booking Available</span>
+            <span style="color: black;">Book Pandit for Naamkaran & Annaprashan</span>
+            <span style="color: black;">Affordable Puja Packages Starting from ₹999</span>
+        </div>
+    </div>
     <div class="dynamic-product-main-container">
         <div class="product-main-container">
             <div class="pdp-main-product-block-new-ui-8-with-popup__gallery te-f8jrfo6osm5hekrrkyj0e44r">
@@ -321,7 +452,8 @@
                                             <span class="button__button-border te-zzi0jxttk6y2ae9jpph4hit2">
                                                 <span class="button__button te-axdh9f4gec09mk7lb1yuqsz9">
                                                     <span class="button__content-wrapper te-v0g6ad2bcl3ri131fppk9183">
-                                                        <p class="button__text te-oze822zlmy4a0rh4hh93squw" style="font-size:undefinedpx; font-weight: 500;">Add To Cart
+                                                        <p class="button__text te-oze822zlmy4a0rh4hh93squw"
+                                                            style="font-size:undefinedpx; font-weight: 500;">Add To Cart
                                                         </p>
                                                     </span>
                                                 </span>
@@ -1083,6 +1215,188 @@
             </div>
         </div>
     </dialog> -->
+
+
+    <footer class="footer-section">
+        <div style="padding: 0px 20px;">
+            <div class="footer-top gy-4 w-100">
+
+                <!-- Column 1 -->
+                <div class="footer-first-section footer-top-item">
+                    <img src="/image/logo.png" class="footer-logo mb-3"
+                        style=" filter: brightness(0) invert(1); object-fit: cover;" alt="Logo">
+
+                    <p class="footer-text mb-3" style="font-size: 12px; font-family: 'Poppins', sans-serif;">
+                        At Puja Khazana, we connect you with experienced and trusted pandits for all kinds of Hindu
+                        rituals
+                        and ceremonies.
+                        Our platform makes it easy to book pandits for pujas like Satyanarayan Puja, Griha Pravesh,
+                        Durga
+                        Puja, Lakshmi Puja and accessible for everyone.
+                    </p>
+
+                    <p class="mb-1 footer-text">Phone: +91 99999 99999</p>
+                    <p class="footer-text">Email: amodr@gmail.com</p>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="footer-second-section footer-top-item footer-collapsible">
+                    <button class="footer-title footer-toggle" type="button" aria-expanded="false">
+                        <span>OUR COMPANY</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Order Tracking Page</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer-third-section footer-top-item footer-collapsible">
+                    <button class="footer-title footer-toggle" type="button" aria-expanded="false">
+                        <span>CUSTOMER SERVICE</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Information</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="footer-subscribe-section footer-top-item">
+                    <h6 class="footer-title">SUBSCRIBE TO AMODR</h6>
+
+                    <p class="footer-text">
+                        Get updates on new launches, exclusive deals, and styling tips delivered
+                        to your inbox. Stay stylish, golden.
+                    </p>
+
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Email address">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+
+                    <div class="social-icons" style="margin-top: 20px;">
+                        <a href="#"><i class="fa-brands fa-facebook-f" style="font-size: 15px;"></i></a>
+                        <a href="#"><i class="bi bi-instagram" style="font-size: 15px;"></i></a>
+                        <a href="#"><i class="bi bi-youtube" style="font-size: 15px;"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp" style="font-size: 15px;"></i></a>
+                    </div>
+                </div>
+
+
+                <!-- Commitment Section -->
+                <div class="commitment-section">
+                    <h6 class="footer-title" style="margin-bottom: 15px;">OUR COMMITMENT</h6>
+
+                    <div class="payment-icons" style="margin-bottom: 15px;">
+                        <img style="height: 27px; width: 27px;" src="/image/google-pay-icon-gpay.webp">
+                        <img style="height: 27px; width: 27px;" src="/image/phonepay.png">
+                        <img style="height: 27px; width: 27px;" src="/image/bhim.png">
+                        <!-- <img style="height: 27px; width: 45px;" src="/image/paytm.png">
+                    <img style="height: 27px; width: 45px;" src="/image/visa.jpeg">
+                    <img style="height: 27px; width: 45px;" src="/image/rupay.png"> -->
+                        <img style="height: 27px; width: 27px;" src="/image/mastercard.webp">
+                    </div>
+
+                    <p class="footer-text">
+                        At Puja Khazana, we are committed to providing trusted and experienced pandits
+                        for all kinds of Hindu rituals and ceremonies. Our platform ensures that every
+                        puja is performed with proper Vedic traditions, authenticity, and devotion.
+
+                        From Satyanarayan Puja and Griha Pravesh to Durga Puja, Lakshmi Puja, weddings,
+                        and other sacred occasions, we aim to make pandit booking simple, reliable,
+                        and accessible for everyone.
+
+                        We promise a seamless booking experience, honest service, and a dedication to
+                        preserving spiritual traditions while bringing convenience through technology.
+                        Your trust, faith, and satisfaction are at the heart of everything we do.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-copyright-text" style="color: white; padding:25px 20px; border-top: 1px dotted white;">
+            © 2026 Amodr . All Rpxights Reserved.
+        </div>
+    </footer>
+    <div>
+        <style>
+            #site-scroll {
+                color: #fff;
+                line-height: 48px;
+                cursor: pointer;
+                height: 48px;
+                right: 20px;
+                position: fixed;
+                border-radius: 50%;
+                text-align: center;
+                transition: all .3s ease 0s;
+                width: 48px;
+                bottom: 65px;
+                z-index: 9999;
+                display: block !important;
+                background: #9b5b1d;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+                user-select: none;
+            }
+
+            #site-scroll:hover {
+                transform: translateY(-2px);
+            }
+
+            #site-scroll i,
+            #site-scroll span {
+                font-size: 20px;
+                font-weight: 700;
+                display: inline-block;
+                transform: translateY(-1px);
+            }
+        </style>
+
+        <span id="site-scroll" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="Go to top"
+            title="Go to top">
+            <i class="bi bi-arrow-up-short" style="font-size: 30px;"></i>
+        </span>
+    </div>
+
+    <div class="bottom-navbar"
+        style="position:fixed; bottom:0; left:0; width:100%; z-index:10; background:#fff; box-shadow:0 0 10px rgba(0,0,0,.1); height: 56px;">
+        <div style="height: 100%;">
+            <ul
+                style="display:flex; justify-content:space-between; align-items:center; margin:0; padding:0; list-style:none; height: 100%;">
+                <li><a href="/"
+                        style="display:flex; flex-direction:column; align-items:center; text-decoration:none; color:#000; font-size:10px; font-weight:700; padding:10px 12px;"><i
+                            style="font-size: 18px; display: block; font-weight: 500; font-family: 'Poppins', sans-serif;"
+                            class="bi bi-house-door"></i>HOME</a></li>
+                <li><a href="/"
+                        style="display:flex; flex-direction:column; align-items:center; text-decoration:none; color:#000; font-size:10px; font-weight:700; padding:10px 12px;"><i
+                            style="font-size: 19px; display: block; font-weight: 500; font-family: 'Poppins', sans-serif;"
+                            class="bi bi-person"></i>ACCOUNT</a></li>
+                <li><a href="/"
+                        style="display:flex; flex-direction:column; align-items:center; text-decoration:none; color:#000; font-size:10px; font-weight:700; padding:10px 12px;"><i
+                            style="font-size: 18px; display: block; font-weight: 500; font-family: 'Poppins', sans-serif;"
+                            class="bi bi-heart"></i>WISHLIST</a></li>
+                <li><a href="/"
+                        style="display:flex; flex-direction:column; align-items:center; text-decoration:none; color:#000; font-size:10px; font-weight:700; padding:10px 12px;"><i
+                            style="font-size: 18px; display: block; font-weight: 500; font-family: 'Poppins', sans-serif;"
+                            class="bi bi-bag"></i>CART</a></li>
+                <li><a href="/"
+                        style="display:flex; flex-direction:column; align-items:center; text-decoration:none; color:#000; font-size:10px; font-weight:700; padding:10px 12px;"><i
+                            style="font-size:18px; display: block; font-weight: 500; font-family: 'Poppins', sans-serif;"
+                            class="bi bi-search"></i>SEARCH</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="script.js"></script>
 </body>

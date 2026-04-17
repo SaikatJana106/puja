@@ -976,7 +976,9 @@ object {
   margin-right: 15px;
   font-size: 18px;
 }
-
+.payment-icons{
+  display: flex;
+}
 .payment-icons img {
   height: 35px;
   margin-right: 5px;
